@@ -5,18 +5,17 @@ void setup()
 }
 void draw()
 {
-  head();
-  eyes();
+  palm();
+  fingers();
 }
-void head()
+void palm()
 {	
 	noStroke();
-	fill(184,134,11);
-	ellipse(200, 200, 170, 185);
+	fill(238,203,173);
+	ellipse(200, 200, 100, 100);
 }
-void eyes()
+void fingers()
 {
-	fill(218,165,32);
-	ellipse(170,160,50,50);
+	quad(170, 200, 200, 200, 100, 100, 150, 120);
 }
 
