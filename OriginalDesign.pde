@@ -9,7 +9,7 @@ void draw()
 {
 	background(139,137,137);
 	WAT();
-	animate();
+	//animate();
 
 }
 //drawing for water molecule 
@@ -21,10 +21,10 @@ void WAT()
 	line(xM +150,yM +100,xM +50,yM +200);
 
 	noStroke();
-	//oxygen
+	//red circle
 	fill(205,92,92);
 	ellipse(xM +150,yM +100,90,90);
-	//hydrogen
+	//white circles
 	fill(250);
 	ellipse(xM +50,yM +200,50,50);
 	ellipse(xM +250,yM +200,50,50);
@@ -37,7 +37,24 @@ void WAT()
 	text("H+",xM +30,yM +210);
 	text("H+",xM +230,yM +210);
 }
-void animate()
+/*void animate()
 {
-	xM += 1;
+	xM = xM + 1;
+	if (xM == 225) 
+	{
+		xM = 50;
+	}
+ 
 }
+*/
+void mouseClicked()
+{
+	//randomizes the location of drawing within(500,500)
+	yM = (int)(random(-55,275));
+	xM = (int)(random(-25,225));
+	
+	//??? don't know
+	rotate(PI/2);
+	WAT();
+}
+
