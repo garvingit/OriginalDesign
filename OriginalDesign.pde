@@ -9,7 +9,7 @@ void draw()
 {
 	background(139,137,137);
 	WAT();
-	//animate();
+	animate();
 
 }
 //drawing for water molecule 
@@ -37,16 +37,16 @@ void WAT()
 	text("H+",xM +30,yM +210);
 	text("H+",xM +230,yM +210);
 }
-/*void animate()
+void animate()
 {
 	xM = xM + 1;
-	if (xM == 225) 
+	if (xM > 275) 
 	{
-		xM = 50;
+		xM = -200;
 	}
  
 }
-*/
+
 void mouseClicked()
 {
 	//randomizes the location of drawing within(500,500)
